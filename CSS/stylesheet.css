@@ -1,0 +1,280 @@
+
+*{
+  font-family: "Press Start 2P", cursive;
+  
+}
+body {
+  background-color:pink;
+}
+
+
+
+
+
+
+
+
+canvas {
+    background-color: black;
+    position: relative; /* Box passt sich Größe Canva an und ermöglicht die Veränderung der Größe,*/
+                        /* weil die Box sich an dem Fenster orientiert -> folgende Befehle werden benötigt*/
+   
+    max-width: 100%; /* die maximale Breite des Canvas wird der Bildschirmgröße prozentual angepasst */
+    max-height: 100%; /* die maximale Höhe des Canvas wird der Bildschirmgröße prozentual angepasst */
+    /* Breite und Höhe des Canvas passen sich somit dem Bildschirmformat an */
+    
+    
+    
+  }
+
+  .Responsive{
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    left: 15%;
+   
+    max-width: 100%; /* die maximale Breite des Canvas wird der Bildschirmgröße prozentual angepasst */
+    max-height: 100%;
+ 
+
+  }
+
+
+  .Transition{
+    background-color:black; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+    max-width: 100%;
+    max-height: 100%;
+  
+  }
+
+  .Auswahl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    height: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+   
+  }
+
+  .Geräte{
+
+    position: relative;
+    height: 50%;
+    width: 50%;
+    display: grid;
+    grid-template-rows: 2;
+    
+  }
+
+  
+.GeräteButton{
+  cursor: pointer;
+}
+
+
+  .movingInterface{
+    
+    height: 25%;
+    width: 30%;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    right: 0;
+    display: grid;
+    grid-template-columns: 3;
+    transform: translate(-25%)
+
+   
+  
+    
+
+  }
+
+  .movingUp{
+
+    
+    display:flex;
+    justify-content: center;
+    align-items: end;
+    
+
+    
+    
+  }
+
+  .movingUpButton{
+
+    position: relative;
+    width: 20%;
+    height: 100%;
+
+  }
+
+
+  .movingRightLeft{
+    
+    
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .movingRightLeftButton{
+    height: 100%;
+    width: 20%;
+
+    
+  }
+
+  .movingDown{
+    
+    position: relative;
+    
+    display:flex;
+    justify-content: center;
+    align-items: top; 
+    
+    
+  }
+
+ .movingDownButton{
+ 
+    height: 100%;
+    width: 20%;
+
+ }
+
+ .timer{
+  background-color: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10;
+  right: 10;
+  width: 20%;
+  height: 10%;
+  border: 4px black solid;
+ }
+
+ .Zeit{
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+ }
+
+
+  .Interface{
+    height: 25%;
+    width: 100%;
+    border-top: 4px black solid;
+    transform: translate(0%,-60%)
+    
+  }
+
+  .Content{
+    
+    position: relative;
+  }
+
+  
+  .Dialog{
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 12px;
+    font-size: 75%;
+    display: grid;
+    grid-template-rows: 2;
+    justify-content: center;
+    align-items: center;
+
+
+
+    
+  
+  }
+
+  .DialogButton{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .Answers{
+
+    position: relative;
+    width: 70%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 2;
+    
+
+  }
+
+  
+.AnswersButton {
+  cursor: pointer;
+  font-size: 50%;
+}
+
+.AnswersButton:hover {
+  background-color: #ddd;
+
+}
+
+  .Hinweise {
+    
+    position: relative;
+    width: 30%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 2;
+    transform: translate(230%, -100%);
+    border-left: 4px black solid
+
+  }
+
+
+  .HinweisCss{
+    
+    cursor: not-allowed;
+    position: relative;
+    font-size: 50%;
+  }
+
+  .ZurückCss{
+    cursor: pointer;
+    position: relative;
+    font-size: 50%;
+  }
+
+
+  
+
+
+
