@@ -80,7 +80,7 @@ class ZoneFlur {
 
 
     draw() {
-        ctx.fillStyle = 'rgba(255, 0, 0, 0.5)' // Farbe Kollisionsblöcke
+        ctx.fillStyle = 'rgba(255, 0, 0, 0)' // Farbe Kollisionsblöcke
         ctx.fillRect(this.position.x, this.position.y, this.width, this.height)
     }
 }
